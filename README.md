@@ -25,3 +25,8 @@ CREATE TABLE `student` (
 -- Records of student
 -- ----------------------------
 INSERT INTO `student` VALUES ('1', '张三', '18', '河北省石家庄市桥西区');
+
+3、启动CAS server
+4、配置application.properties shiro.cas地址
+5、启动springboot-casclient,访问 http://127.0.0.1:8081/student/1
+6、登录成功，返回数据信息，enjoy it！
