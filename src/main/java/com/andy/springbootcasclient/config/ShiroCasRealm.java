@@ -55,15 +55,11 @@ public class ShiroCasRealm extends CasRealm{
         //权限信息对象info,用来存放查出的用户的所有的角色（role）及权限（permission）
         //todo 用户的角色权限列表
         List<String> permissions = new ArrayList<>();
-//        List<String> permissions = resourceInterface.getResources(roleLists);
+//      List<String> permissions = resourceInterface.getResources(roleLists);
         authorizationInfo.addRoles(roleLists);
         authorizationInfo.addStringPermissions(permissions);
-//      authorizationInfo.addRole("admin");
-//      authorizationInfo.addStringPermission("admin:manage");
+        authorizationInfo.addRole("admin");
+        authorizationInfo.addStringPermission("admin:manage");
         return authorizationInfo;
     }
-
-
-
-
 }
